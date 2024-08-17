@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Minecraft</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB;
+        }
+        canvas {
+            border: 1px solid black;
+            background-color: #70A1FF;
+        }
+        #controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        #blockCount {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <button onclick="setBlockType('grass')">Grass</button>
+        <button onclick="setBlockType('dirt')">Dirt</button>
+        <button onclick="setBlockType('stone')">Stone</button>
+        <button onclick="setBlockType('water')">Water</button>
+        <button onclick="setBlockType('sand')">Sand</button>
+        <button onclick="setBlockType('wood')">Wood</button>
+        <button onclick="setBlockType('brick')">Brick</button>
+        <!-- New Block Buttons -->
+        <button onclick="setBlockType('cobblestone')">Cobblestone</button>
+        <button onclick="setBlockType('oakPlank')">Oak Plank</button>
+        <button onclick="setBlockType('ironOre')">Iron Ore</button>
+        <button onclick="setBlockType('goldOre')">Gold Ore</button>
+        <button onclick="setBlockType('diamondOre')">Diamond Ore</button>
+        <button onclick="setBlockType('coalOre')">Coal Ore</button>
+        <button onclick="setBlockType('redstoneOre')">Redstone Ore</button>
+        <button onclick="setBlockType('emeraldOre')">Emerald Ore</button>
+        <button onclick="setBlockType('obsidian')">Obsidian</button>
+        <button onclick="setBlockType('netherrack')">Netherrack</button>
+        <button onclick="setBlockType('netherBrick')">Nether Brick</button>
+        <button onclick="setBlockType('endStone')">End Stone</button>
+        <button onclick="setBlockType('glowstone')">Glowstone</button>
+        <button onclick="setBlockType('quartzOre')">Quartz Ore</button>
+        <button onclick="setBlockType('clay')">Clay</button>
+        <button onclick="setBlockType('gravel')">Gravel</button>
+        <button onclick="setBlockType('mycelium')">Mycelium</button>
+        <button onclick="setBlockType('sandstone')">Sandstone</button>
+        <button onclick="setBlockType('redSandstone')">Red Sandstone</button>
+        <button onclick="setBlockType('prismarine')">Prismarine</button>
+        <button onclick="setBlockType('darkPrismarine')">Dark Prismarine</button>
+        <button onclick="setBlockType('seaLantern')">Sea Lantern</button>
+        <button onclick="setBlockType('purpur')">Purpur</button>
+        <button onclick="setBlockType('boneBlock')">Bone Block</button>
+        <button onclick="setBlockType('terracotta')">Terracotta</button>
+        <button onclick="setBlockType('redTerracotta')">Red Terracotta</button>
+        <button onclick="setBlockType('blueTerracotta')">Blue Terracotta</button>
+        <button onclick="setBlockType('greenTerracotta')">Green Terracotta</button>
+        <button onclick="setBlockType('yellowTerracotta')">Yellow Terracotta</button>
+    </div>
+
+    <canvas id="gameCanvas" width="780" height="600"></canvas>
+    <div id="blockCount"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
